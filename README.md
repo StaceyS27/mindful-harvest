@@ -1,4 +1,4 @@
-# Grace Hopper Program Capstone Project 2023 - Mindful Harvest Store
+# Mindful Harvest Store
 
 ## Live: https://mindful-harvest.onrender.com/
 
@@ -7,6 +7,20 @@
 At Mindful Harvest, we belive in a world built slowly, with care, and compassion. The world we build around us should reflect who we are and how we live.
 To create a more connected community that cares about one another, we provide the customer with home-made and organic products like clothing, jewelry, toys, home living, and art, including customisable products. We bring small businesses together and connect customers to local and sustainable products.
 At our website, customers can make purchases and have them delivered to their home address. Customers can also make a profile so that the checkout process is easier, as their cart information will be saved for later use.
+
+## Key Featues
+
+Register and Login: Register and log in to your account to access saved information on your account. You will be able to continue shopping with your previously saved cart and access your order history once you create an account. 
+
+Products: Enjoy browsing the many products we have on our website. These products are sustainably sourced and mostly handmade. You can view each product with its image, description and price. You can determine the quantity of the product you'd like to purchase and add to your cart.
+
+Search: If you have a specific item in mind, use our search bar to look up if the item you desire is listed on our website. 
+
+Shopping Cart: Whether you're a logged in user or a guest user, shop with ease as your shopping cart will be saved even after you leave the website and come back to it.
+
+Checkout: When you're ready, view the total price of your cart, adjust the quantity of items if needed, and complete your purchase.
+
+Administrator: As an administrator, you will have access to viewing all of the users of the website, as well as adding, editing, and deleting products. If you would like to log in as an administrator, please use the username 'admin@secret.com' and the password 'admin.'
 
 ## Database Model
 
