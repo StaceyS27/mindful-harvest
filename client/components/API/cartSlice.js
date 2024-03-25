@@ -44,3 +44,4 @@ export default cartSlice.reducer;
 
 export const {setCart, updateCart, emptyCart} = cartSlice.actions;
 
+
