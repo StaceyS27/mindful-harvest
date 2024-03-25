@@ -71,6 +71,7 @@ const SingleProduct = () => {
           setCart({
             productId: Number(productId),
             quantity: amount,
+            productPrice: singleProductData.price,
           })
         );
       }
