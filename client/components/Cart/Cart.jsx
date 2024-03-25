@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useEffect } from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
 import Button from '@mui/material/Button';
 import { useGetUserWithCartQuery } from '../API/mindfulHarvestApi';
@@ -17,6 +18,7 @@ import { Paper } from "@mui/material";
 const Cart = () => {
   const token = useSelector((state) => state.token);
   const guestCart = useSelector((state) => state.cart);
+  const [guestTotal, setGuestTotal] = useState(null);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -139,6 +141,28 @@ const Cart = () => {
       navigate('/confirmation');
     };
 
+    // guest cart total function
+    function guestCartTotal() {
+      let totalForCartItem = [];
+
+      for (let i = 0; i < guestCart.length; i++) {
+        let pricePerItem = guestCart[i].productPrice * guestCart[i].quantity;
+        totalForCartItem.push(pricePerItem)
+      }
+
+      let total = totalForCartItem.reduce(function (accumulator, currentValue) {
+        return accumulator + currentValue
+      })
+
+      setGuestTotal(total)
+    }
+    // calling cart total function if there are items in the cart 
+    useEffect(() => {
+      if (guestCart.length > 0) {
+        guestCartTotal();
+      }
+    }, [guestCart]);
+
     return (
       <div style={{ textAlign: 'left', marginLeft: '1em' }}>
         <Typography variant="h5" style={{ marginBottom: '2%', marginTop: '2%', marginLeft: '10%' }}>Guest Shopping Cart</Typography>
@@ -149,6 +173,9 @@ const Cart = () => {
                 <GuestCartItem key={itemObj.id} itemObj={itemObj} />
               </Paper>
             ))}
+            <Paper elevation={3} style={{ width: '78%', margin: 'auto', alignContent: 'left', marginBottom: '1%', marginTop: '1%', padding: '1%' }}>
+              <Typography variant="h6" style={{ textAlign: 'right', marginRight: '2%' }}>Total Price: ${guestTotal}</Typography>
+            </Paper>
             <Button
               onClick={handleEmptyCart}
               variant="contained"
