@@ -14,7 +14,8 @@ const cartSlice = createSlice({
             }
             state.push({
                 productId: payload.productId,
-                quantity: payload.quantity
+                quantity: payload.quantity,
+                productPrice: payload.productPrice,
             });
             localStorage.setItem("cart", JSON.stringify(state));
         },
