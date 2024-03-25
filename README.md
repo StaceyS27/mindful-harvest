@@ -4,9 +4,7 @@
 
 ## Mindful Harvest Web-Store
 
-At Mindful Harvest, we belive in a world built slowly, with care, and compassion. The world we build around us should reflect who we are and how we live.
-To create a more connected community that cares about one another, we provide the customer with home-made and organic products like clothing, jewelry, toys, home living, and art, including customisable products. We bring small businesses together and connect customers to local and sustainable products.
-At our website, customers can make purchases and have them delivered to their home address. Customers can also make a profile so that the checkout process is easier, as their cart information will be saved for later use.
+At Mindful Harvest, we believe in a world built slowly, with care, and compassion. The world we build around us should reflect who we are and how we live. To create a more connected community that cares about one another, we provide customers with homemade and organic products like clothing, jewelry, toys, home living, and art, including customizable products. We bring small businesses together and connect customers to local and sustainable products. On our website, customers can make purchases and have them delivered to their home address. Customers can also create a profile so that the checkout process is easier, as their cart information will be saved for later use.
 
 ## Key Featues
 
